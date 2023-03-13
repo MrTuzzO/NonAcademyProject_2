@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg: #2a3d81;
+    --body: #6c93cc;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height: 300px;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main_circle{
+    height: 200px;
+    width: 200px;
+    background: var(--body);
+    border-radius: 50%;
+    position: relative;
+}
+.ring_circle{
+    height: 130px;
+    width: 130px;
+    background: transparent;
+    border: 20px solid var(--bg);
+    border-radius: 50%;
+    position: absolute;
+}
+.rc-1{
+    top: 15px;
+    left: -60px;
+}
+.rc-2{
+    top: 15px;
+    right: -60px;
+}
+.rc-3{
+    top: -60px;
+    left: 15px;
+}
+.rc-4{
+    bottom: -65px;
+    left: 15px;
+}
